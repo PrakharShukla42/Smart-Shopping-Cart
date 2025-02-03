@@ -78,7 +78,7 @@ To set up the project, install the following Arduino libraries:
 🛒 **Step 4**: If an unauthorized item is scanned, an alert message appears.
 🛒 **Step 5**: The customer proceeds directly to payment without the need for manual scanning.
 
-![RFID Scanning]((https://www.instagram.com/reel/CnRa0eWgHRp/?igsh=dW5xNW5ub3AwOWg=))
+![RFID Scanning](C:\Users\prakh\Downloads)
 
 ---
 ## **Future Enhancements**
@@ -90,4 +90,4 @@ To set up the project, install the following Arduino libraries:
 🚀 *This smart shopping cart is a step towards making retail experiences seamless and efficient!*
 
 ---
-📩 *For queries and collaborations, contact us at [your_email@example.com](mailto:your_email@example.com).*
+📩 *For queries and collaborations, contact us at [your_email@example.com](therockstarop9956@gmail.com).*
