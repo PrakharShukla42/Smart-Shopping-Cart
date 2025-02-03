@@ -87,4 +87,4 @@ To set up the project, install the following Arduino libraries:
 🚀 *This smart shopping cart is a step towards making retail experiences seamless and efficient!*
 
 ---
-📩 *For queries and collaborations, contact us at [your_email@example.com](mailto:your_email@example.com).*
+📩 *For queries and collaborations, contact us at [your_email@example.com](therockstarop9956@gmail.com).*
