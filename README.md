@@ -4,7 +4,7 @@
 ### **Revolutionizing the Shopping Experience with IoT & RFID**
 The **IoT Smart Shopping Cart** is designed to simplify and enhance the shopping process by automatically adding products to a virtual shopping list when they are placed in the cart. By leveraging **RFID technology**, the system eliminates the need for manual scanning at checkout counters, reducing queues and saving time. The cart features an **OLED display** that provides real-time updates on selected items, their prices, and total cost, ensuring a seamless shopping experience.
 
-![Smart Shopping Cart](https://example.com/smart_cart_image.jpg)
+![Smart Shopping Cart]([https://tse3.mm.bing.net/th?id=OIP.mwWF149OfK2Svp2W6nYdRwHaF0&pid=Api&P=0&h=180])
 
 ## **Key Features**
 ✅ **Automatic Product Detection**: Scans RFID-tagged items as they are placed in the cart.
