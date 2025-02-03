@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produst Detiles</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(/img/15.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo img{
+            width: 100px;
+            height: 70px;
+            border-radius: 40px;
+            margin-top: 10px;
+        }
+        
+        
+        
+        .navbar{
+            list-style: none;
+            display: flex;
+            border: 2px solid rgb(167, 0, 245);
+            background-color: rgb(12, 12, 19);
+            border-radius: 20px;
+        }
+        .navbar li a{
+            display: flex;
+        text-decoration: none;
+            color: white;
+            font-size: 18px;
+        
+        }
+        li a{
+            padding: 8px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .nav:hover{
+            border-radius: 20px;
+            background-color: rgb(167, 0, 245);
+            color: black;
+        }
+        
+        #btn{
+            list-style: none;
+        }
+        .btn{
+            background-color: black;
+            list-style: none;
+            border: 2px solid rgb(167, 0, 245);
+            border-radius: 20px;
+            padding: 4px;
+            margin: 6px;
+            margin-left: -20px
+        }
+        .btn:hover{
+            background-color: rgb(167, 0, 245);
+        }
+        .btn a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: none;
+            border: none;
+        }
+
+
+        #table{
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        
+
+        table{
+            backdrop-filter: blur(30px);
+            border-radius:20px ;
+            padding: 10px;
+            margin: 100px;
+            box-shadow: 0px 7px 20px 0px rgb(0 0 0);
+            grid-template-areas: 
+            "thead,thead,thead"
+            "tbody,tbody,tbody";
+        }
+        
+        table, th, td {
+    /* margin: 10px; */
+         border: 2px solid white;
+         padding: 50px;
+            color:white;
+        }
+        
+        h1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="1.html"><img src="/img/15.png" alt="Img error" class="img1
+                "></a>
+        </div>
+        <div id="nav">
+            <ul class="navbar">
+                <li class="nav"><a href="1.html" target="_self">HOME</a></li>
+                <li class="nav"><a href="2.html" target="_self">WORKING</a></li>
+                <li class="nav"><a href="3.html" target="_self">BENEFITS</a></li>
+                <li class="nav"><a href="au.html" target="_self">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul id="btn">
+                <li class="btn"><a href="https://instagram.com/iotvers?igshid=YmMyMTA2M2Y=">instagram</a></li>
+                <li class="btn"><a href="https://youtube.com">youtube</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>Produst Detiles</h1>
+    <div id="table" class="container mt">
+    <table class="table">
+        <thead>
+        <th>SNo</th>
+        <th>price</th>
+        <th>product</th>
+    </thead>
+    <tbody id="tbody1">
+        <tr>
+        <td>1</td>
+        <td>20</td>
+        <td>Mazza</td>
+    </tr>
+        <tr>
+            <td>2</td>
+            <td>45</td>
+            <td>Chocobakes</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+    <script type="module">
+        
+/*var admin = require("firebase-admin");
+
+var serviceAccount = require("service account project jason");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "url of realtime database"
+});*/
+
+var SNo=0;
+var tbody=document.getElementById('tbody1');
+
+function AddItemToTable( products,price){
+    let trow=document.createElement("tr");
+    let td1=document.createElement('td');
+    let td2=document.createElement('td');
+    let td3=document.createElement('td');
+    // let td4=document.createElement('td');
+
+    td1.innerHTML=++SNo;
+    td2.innerHTML=products;
+    td3.innerHTML=price;
+    trow.appendChild(td1);
+    trow.appendChild(td2);
+    trow.appendChild(td3);
+    // trow.appendChild(td4);
+
+    tbody.appendChild(trow);
+
+}
+
+function AddItemsToTable(TheStudent){
+    SNo=0;
+    tbody.innerHTML="";
+    TheStudent.forEach(element=> {
+        AddItemToTable(element.price, element.product);
+    });
+}
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "api Key",
+    authDomain: "project domain",
+    databaseURL: "database url",
+    projectId: "Project Id",
+    storageBucket: "storage bucket name",
+    messagingSenderId: "messages sending Id",
+    appId: "App id,
+    measurementId: "masurment Id"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  import{getDatabase, ref, child, onValue, get}
+  from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+  const db = getDatabase();
+
+
+function GetAllDataOnce(){
+    const dbRef = ref(db);
+    get(child(dbRef, "items"))
+    .then((snapshot)=>{
+        var Items=[];
+        snapshot.forEach(childSnapshot=>{
+        Items.push(childSnapshot.val());
+        });
+        AddItemsToTable(Items);
+    });
+}
+
+/*function GetAllDataRealtime(){
+    const dbRef = ref(db, "items");
+    onValue(dbRef,(snapshot)=>{
+        var Items=[];
+        snapshot.forEach(childSnapshot=>{
+        Items.push(childSnapshot.val());
+        });
+        AddItemsToTable(Items);
+    });
+}*/
+
+window.onload = GetAllDataOnce;
+
+    </script>
+</body>
+</html>
