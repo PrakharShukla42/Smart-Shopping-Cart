@@ -78,7 +78,7 @@ To set up the project, install the following Arduino libraries:
 🛒 **Step 4**: If an unauthorized item is scanned, an alert message appears.
 🛒 **Step 5**: The customer proceeds directly to payment without the need for manual scanning.
 
-![RFID Scanning](https://example.com/rfid_scan_image.jpg)
+![RFID Scanning]((https://www.instagram.com/reel/CnRa0eWgHRp/?igsh=dW5xNW5ub3AwOWg=))
 
 ---
 ## **Future Enhancements**
